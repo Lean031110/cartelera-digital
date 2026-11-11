@@ -1,0 +1,27 @@
+# dependencies
+node_modules/
+
+# build outputs
+dist/
+build/
+*.tsbuildinfo
+
+# coverage
+coverage/
+
+# runtime data (never commit screen data, media or databases)
+data/
+apps/server/data/
+e2e/test-data/
+
+# environment / secrets
+.env
+.env.*
+
+# test artifacts
+playwright-report/
+test-results/
+
+# editor / OS
+.DS_Store
+*.log

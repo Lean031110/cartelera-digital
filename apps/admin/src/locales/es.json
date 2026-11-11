@@ -1,0 +1,26 @@
+{
+  "app": {
+    "title": "Cartelera",
+    "subtitle": "Panel de administración"
+  },
+  "status": {
+    "heading": "Estado del sistema",
+    "phase": "Fase actual",
+    "phaseValue": "F0 — Esqueleto operativo",
+    "summary": "El monorepo, la integración continua y la imagen Docker están listos. El editor visual, las pantallas y los menús llegan en las próximas fases."
+  },
+  "nav": {
+    "player": "Abrir reproductor (/tv)",
+    "health": "Estado técnico (/healthz)"
+  },
+  "roadmap": {
+    "heading": "Próximas fases",
+    "f1": "F1 · Núcleo del servidor: base de datos y cuentas",
+    "f2": "F2 · Diseños, medios y manifiesto de pantalla",
+    "f3": "F3 · Editor visual"
+  },
+  "footer": {
+    "version": "Versión",
+    "protocol": "Protocolo del reproductor"
+  }
+}

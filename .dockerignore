@@ -1,0 +1,12 @@
+.git
+.github
+**/node_modules
+**/dist
+**/build
+**/coverage
+data
+docs
+playwright-report
+test-results
+e2e/test-data
+*.log

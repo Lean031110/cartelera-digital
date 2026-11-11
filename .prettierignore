@@ -1,0 +1,8 @@
+pnpm-lock.yaml
+dist/
+build/
+coverage/
+docs/spec/
+THIRD_PARTY_NOTICES.md
+playwright-report/
+test-results/

@@ -1,0 +1,32 @@
+{
+  "name": "cartelera-digital",
+  "version": "0.1.0",
+  "private": true,
+  "description": "CMS de cartelería digital autoalojado (Docker) para pantallas de publicidad y de restaurante",
+  "license": "MIT",
+  "type": "module",
+  "packageManager": "pnpm@12.18.0+sha512-nXiC1dyCFH7PxOBiqjSDTgrQKWcQoYN6ERWuASEn02txCeMhrBWYod0KZVl2gbHpmRfhLtDXSerpEYeUM2O+sw==",
+  "engines": {
+    "node": ">=24.0.0"
+  },
+  "scripts": {
+    "build": "pnpm -r --if-present build",
+    "lint": "eslint .",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "typecheck": "pnpm -r --if-present typecheck",
+    "test": "pnpm -r --if-present test",
+    "e2e": "pnpm --filter @cartelera/e2e test",
+    "licenses:check": "node scripts/check-licenses.mjs --check",
+    "licenses:update": "node scripts/check-licenses.mjs --write",
+    "verify": "pnpm lint && pnpm format:check && pnpm typecheck && pnpm build && pnpm test"
+  },
+  "devDependencies": {
+    "@eslint/js": "10.0.1",
+    "eslint": "10.14.0",
+    "globals": "17.14.0",
+    "prettier": "3.10.0",
+    "typescript": "5.9.3",
+    "typescript-eslint": "8.72.2"
+  }
+}

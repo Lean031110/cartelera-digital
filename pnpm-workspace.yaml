@@ -1,0 +1,7 @@
+packages:
+  - apps/*
+  - packages/*
+  - e2e
+minimumReleaseAgeExclude:
+  - prettier@3.10.0
+  - vite@8.3.8

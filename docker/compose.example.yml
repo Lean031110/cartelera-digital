@@ -1,0 +1,20 @@
+# Cartelera — despliegue de ejemplo (guía §1.2).
+#
+#   docker compose -f docker/compose.example.yml up -d
+#   Panel:    http://IP-DEL-SERVIDOR:8080/admin
+#   Pantalla: http://IP-DEL-SERVIDOR:8080/tv
+#
+# El volumen nombrado guarda la base de datos y los medios (un contenedor,
+# un volumen: copias de seguridad triviales, DEC-01/DEC-03).
+services:
+  cartelera:
+    image: ghcr.io/lean031110/cartelera-digital:edge
+    container_name: cartelera
+    ports:
+      - '8080:8080'
+    volumes:
+      - cartelera-data:/data
+    restart: unless-stopped
+
+volumes:
+  cartelera-data:
