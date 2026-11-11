@@ -1,6 +1,6 @@
 {
   "name": "cartelera-digital",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": true,
   "description": "CMS de cartelería digital autoalojado (Docker) para pantallas de publicidad y de restaurante",
   "license": "MIT",
