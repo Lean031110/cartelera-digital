@@ -47,7 +47,7 @@ Idioma: español. Última actualización: 2026-11-12 (F0 cerrado).
   `lint`, `typecheck`, `test (24)`, `test (26)`, `licenses`, `e2e`, `build (pull_request)`;
   historial lineal; sin force-push).
 - Imagen `ghcr.io/lean031110/cartelera-digital` **pública** (pull anónimo verificado):
-  etiquetas `edge` (main) y `v0.1.1`/`v0.1`/`latest` (tags). amd64 + arm64.
+  etiquetas `edge` (main) y `0.1.1`/`0.1`/`latest` (tags, sin «v», convención Docker). amd64 + arm64.
 - El tag antiguo `cartelera-digital-v0.1.1` quedó ligado al release de GitHub por el prefijo
   inicial de release-please; los siguientes ya salen como `vX.Y.Z`.
 - El bootstrap inicial se subió directo a main (ADR-0001.7); desde F1 todo cambio va por PR
