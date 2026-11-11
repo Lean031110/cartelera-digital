@@ -1,10 +1,13 @@
 {
-  "extends": "./tsconfig.json",
+  "extends": "../../tsconfig.base.json",
   "compilerOptions": {
+    "types": [],
+    "lib": ["ES2022", "DOM"],
     "noEmit": false,
     "declaration": true,
     "outDir": "dist",
-    "rootDir": "src"
+    "rootDir": "src",
+    "paths": {}
   },
   "include": ["src"]
 }

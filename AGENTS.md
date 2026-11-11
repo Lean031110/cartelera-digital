@@ -24,7 +24,7 @@ corepack enable && pnpm install   # pnpm 12 fijado en package.json#packageManage
 pnpm verify                       # lint + format:check + typecheck + build + test
 pnpm e2e                          # Playwright (requiere build previo)
 pnpm licenses:update              # regenerar THIRD_PARTY_NOTICES.md tras cambiar dependencias
-pnpm --filter @cartelera/server dev?  # no; usa: pnpm build && node apps/server/dist/main.js
+node apps/server/dist/main.js     # arrancar el servidor (requiere build previo)
 ```
 
 - Server local: `node apps/server/dist/main.js` (env: `PORT`, `HOST`, `DATA_DIR`, `LOG_LEVEL`,

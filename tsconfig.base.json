@@ -4,6 +4,12 @@
     "lib": ["ES2022"],
     "module": "ESNext",
     "moduleResolution": "bundler",
+    "baseUrl": ".",
+    "paths": {
+      "@cartelera/shared": ["packages/shared/src/index.ts"],
+      "@cartelera/render-core": ["packages/render-core/src/index.ts"],
+      "@cartelera/widgets": ["packages/widgets/src/index.ts"]
+    },
     "strict": true,
     "noUncheckedIndexedAccess": true,
     "noImplicitOverride": true,
@@ -14,6 +20,7 @@
     "esModuleInterop": true,
     "skipLibCheck": true,
     "resolveJsonModule": true,
-    "noEmit": true
+    "noEmit": true,
+    "noEmitOnError": true
   }
 }

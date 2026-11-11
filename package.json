@@ -5,7 +5,7 @@
   "description": "CMS de cartelería digital autoalojado (Docker) para pantallas de publicidad y de restaurante",
   "license": "MIT",
   "type": "module",
-  "packageManager": "pnpm@12.18.0+sha512-nXiC1dyCFH7PxOBiqjSDTgrQKWcQoYN6ERWuASEn02txCeMhrBWYod0KZVl2gbHpmRfhLtDXSerpEYeUM2O+sw==",
+  "packageManager": "pnpm@12.18.0+sha512.9d7882d5dc82147ecfc4e062aa34834e0ad0296710a1837a1115ae012127d36b7109e321ac1598a1dd0a65597681b1e99917e12ed0d749eae91187943363beb3",
   "engines": {
     "node": ">=24.0.0"
   },
@@ -16,7 +16,7 @@
     "format:check": "prettier --check .",
     "typecheck": "pnpm -r --if-present typecheck",
     "test": "pnpm -r --if-present test",
-    "e2e": "pnpm --filter @cartelera/e2e test",
+    "e2e": "pnpm --filter @cartelera/e2e run e2e",
     "licenses:check": "node scripts/check-licenses.mjs --check",
     "licenses:update": "node scripts/check-licenses.mjs --write",
     "verify": "pnpm lint && pnpm format:check && pnpm typecheck && pnpm build && pnpm test"
