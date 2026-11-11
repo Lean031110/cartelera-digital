@@ -7,7 +7,9 @@ on:
     tags: ['v*.*.*']
 
 env:
-  IMAGE: ghcr.io/${{ github.repository_owner }}/cartelera-digital
+  # ghcr.io + nombre del repositorio; se pasa a minúsculas en cada paso
+  # (las referencias Docker deben ir en minúsculas).
+  IMAGE: ghcr.io/${{ github.repository }}
 
 jobs:
   build:
@@ -71,7 +73,7 @@ jobs:
       - name: Pull and smoke-test the published image
         run: |
           set -euo pipefail
-          IMAGE="${IMAGE}@${{ needs.build.outputs.digest }}"
+          IMAGE="${IMAGE,,}@${{ needs.build.outputs.digest }}"
           echo "Probando $IMAGE"
           docker pull "$IMAGE"
           docker run -d --name cartelera-verify -p 18080:8080 "$IMAGE"
