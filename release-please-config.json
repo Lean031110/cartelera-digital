@@ -5,7 +5,16 @@
       "release-type": "node",
       "changelog-path": "CHANGELOG.md",
       "package-name": "cartelera-digital",
-      "include-component-in-root": true
+      "include-component-in-tag": false,
+      "extra-files": [
+        "apps/server/package.json",
+        "apps/admin/package.json",
+        "apps/player/package.json",
+        "packages/shared/package.json",
+        "packages/render-core/package.json",
+        "packages/widgets/package.json",
+        "e2e/package.json"
+      ]
     }
   }
 }

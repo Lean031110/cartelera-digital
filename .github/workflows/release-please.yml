@@ -16,3 +16,7 @@ jobs:
         with:
           config-file: release-please-config.json
           manifest-file: .release-please-manifest.json
+          # Opcional: con un PAT dedicado (secreto CARTELERA_RELEASE_TOKEN, ámbito
+          # solo este repo, Contents R/W) los PR de release disparan CI; con el
+          # GITHUB_TOKEN por defecto no (regla antirrecursión de GitHub).
+          token: ${{ secrets.CARTELERA_RELEASE_TOKEN || github.token }}

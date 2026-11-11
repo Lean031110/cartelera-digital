@@ -6,3 +6,5 @@ docs/spec/
 THIRD_PARTY_NOTICES.md
 playwright-report/
 test-results/
+
+CHANGELOG.md
