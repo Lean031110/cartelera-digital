@@ -10,8 +10,8 @@
   },
   "devDependencies": {
     "es-check": "9.8.1",
-    "jsdom": "31.0.0",
-    "rollup": "4.68.2",
+    "jsdom": "31.0.1",
+    "rollup": "4.68.3",
     "typescript": "5.9.3",
     "vitest": "5.1.0"
   }
